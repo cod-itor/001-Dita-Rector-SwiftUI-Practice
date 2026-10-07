@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Recipe-App
-//
-//  Created by Dita Rector on 5/10/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {

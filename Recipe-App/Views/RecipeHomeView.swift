@@ -36,7 +36,7 @@ struct RecipeHomeView: View {
                         .padding(.horizontal)
                         .padding(.top, 10)
                         
-                        // Search Bar
+                        
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.secondary)
@@ -61,7 +61,7 @@ struct RecipeHomeView: View {
                 }
             }
         }
-        .tint(.black) // For navigation links
+        .tint(.black)
     }
 }
 

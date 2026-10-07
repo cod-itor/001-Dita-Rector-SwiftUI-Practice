@@ -15,7 +15,7 @@ struct RecipeDetailView: View {
             
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    // Hero Image - constrained properly
+                    
                     Rectangle()
                         .fill(Color.clear)
                         .frame(height: 350)
@@ -26,7 +26,7 @@ struct RecipeDetailView: View {
                         )
                         .clipped()
                     
-                    // Content Area
+                    
                     VStack(alignment: .leading, spacing: 20) {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
@@ -87,15 +87,21 @@ struct RecipeDetailView: View {
                     .background(Color.appBackground)
                     .clipShape(RoundedRectangle(cornerRadius: 32))
                     .offset(y: -40)
-                    .padding(.bottom, -40) // compensate for offset
+                    .padding(.bottom, -40)
                 }
             }
             .edgesIgnoringSafeArea(.top)
             
-            // Custom Back Button Floating over everything
-            BackButton()
-                .padding(.leading, 16)
-                .padding(.top, 60) // push down into safe area
+            
+            VStack {
+                HStack {
+                    BackButton()
+                    Spacer()
+                }
+                Spacer()
+            }
+            .padding(.leading, 20)
+            .padding(.top, 12)
         }
         .navigationBarBackButtonHidden(true)
     }

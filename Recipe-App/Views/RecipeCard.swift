@@ -19,10 +19,13 @@ struct RecipeCard: View {
                 .font(.headline)
                 .foregroundColor(.primary)
                 .lineLimit(1)
+                .minimumScaleFactor(0.85)
             
             Text("\(recipe.timeMinutes) min · Serves \(recipe.baseServings)")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.85)
         }
     }
 }

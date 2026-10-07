@@ -26,7 +26,7 @@ struct MethodStepCard: View {
                     .foregroundColor(.secondary)
                 }
             }
-            .padding(.top, 4) // Align nicely with the circular number
+            .padding(.top, 4)
             Spacer()
         }
         .padding(20)
